@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Examen de Entornos</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="somos.html">Conócenos</a>
+        <a href="index.html" class="active">Productos</a>
+        <a href="agregar.html">Registro</a>
+        <a href="visitanos.html">Contacto</a>
+    </nav>
+
+    <!-- Caja Azul/Cian idéntica a la pantalla del examen -->
+    <div class="main-container">
+        <form class="form-group" action="alta.html" method="POST">
+            <div class="input-row">
+                <label for="web">Web:</label>
+                <input type="text" id="web" name="web" value="https://accounts.google.com/SignUp">
+            </div>
+            
+            <div class="input-row">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Juan">
+            </div>
+            
+            <div class="input-row">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" value="Pablo">
+            </div>
+        </form>
+
+        <button type="submit" class="btn-buscar">Buscar</button>
+    </div>
+
 </body>
 </html>
