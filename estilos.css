@@ -1,0 +1,110 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Barra de navegación (Menú superior) */
+nav {
+    display: flex;
+    background-color: #2b70c9;
+    padding: 5px;
+    width: 80%;
+    max-width: 700px;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+    border-right: 1px solid #1a4d91;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:hover, nav a.active {
+    background-color: #1a4d91;
+}
+
+/* Contenedor principal cian con borde grueso */
+.main-container {
+    background-color: #29b6cc;
+    border: 5px solid #104c91;
+    border-radius: 35px;
+    padding: 40px;
+    margin-top: 30px;
+    width: 75%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #104c91;
+    font-weight: bold;
+}
+
+/* Formulario e inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+}
+
+.input-row label {
+    width: 80px;
+    font-size: 16px;
+}
+
+.input-row input {
+    flex-grow: 1;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Botón Buscar Cursivo */
+.btn-buscar {
+    background-color: white;
+    color: #104c91;
+    border: 1px solid #ccc;
+    padding: 25px 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Georgia', cursive, serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-buscar:hover {
+    background-color: #e6f7ff;
+}
+
+/* Estilos para textos de secciones informativas */
+.info-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 75%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
